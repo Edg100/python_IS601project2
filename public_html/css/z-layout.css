@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    color: black;
+}
+
+.clearFix {
+    clear: both;
+}
+
+#primaryLinks {
+    background-color: steelblue;
+    height: 55px;
+    border: 1px solid black;
+    margin-top: 0;
+    line-height: 60px;
+    margin-bottom: 0;
+    border-radius: 4px;
+    padding: 0px;
+    text-align: right;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: "Garamond", serif;
+    word-spacing: 20px;
+}
+
+#primaryLinks li {
+    display: inline-flex;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+#primaryContent {
+    float: left;
+    width: 66%;
+    background-color: #c1c9d2;
+    margin-top: auto;
+
+}
+
+#secondaryContent {
+    background-color: black;
+
+}
+
+#footer {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    background-color: #5e7184;
+}
+#wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo img{
+    width: 367px;
+    height: 57px;
+    float: left;
+    margin-bottom: auto;
+}
+
+#primaryContent {
+    clear: both;
+
+}
+
+.hero_text {
+    color: greenyellow;
+}
+
+#figcaptionTag {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
+#figcaptionTag2 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
+#figcaptionTag3 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .hidden {
+        visibility: hidden;
+    }
+}
+
+#gfg {
+    color:#001f3f;
+    font-size:50px;
+    font-weight:bold;
+    text-align: center;
+}
+
+#geeks {
+    font-size:35px;
+    font-weight:bold;
+}
+#justifyText {
+    text-align: justify;
+    line-height: 1;
+    float: left;
+}
+#justifyText2 {
+    text-align: justify;
+    line-height: 1;
+    float: left;
+}
+
+div.center {
+    text-align: center;
+}
+p {
+    line-height: 2;
+    text-align: justify;
+    font-size:20px;
+}

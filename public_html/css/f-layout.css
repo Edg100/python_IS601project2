@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    color: black;
+}
+.clearFix {
+    clear: both;
+}
+
+#primaryLinks {
+    background-color: lightblue;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 0;
+    line-height: 100px;
+    margin-bottom: 40px;
+}
+
+#primaryLinks li {
+    display: inline;
+}
+
+#primaryContent {
+    float: left;
+    width: 66%;
+    background-color: #c1c9d2;
+    font-family: "Garamond", serif;
+    font-size:20px;
+
+}
+
+#secondaryContent {
+
+}
+
+#footer {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    background-color: #5e7184;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: steelblue;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 90%; /* Full width */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#abcOrder {
+    list-style-type: lower-alpha;
+}
+
+#ABCOrder2 {
+    list-style-type: upper-alpha;
+}
+
+#gfg {
+    color:#001f3f;
+    font-size:50px;
+    font-weight:bold;
+    text-align: center;
+}
+
+#geeks {
+    text-align: center;
+    font-size:35px;
+    font-weight:bold;
+    color: darkred;
+
+}
+#geeks2 {
+    text-align: center;
+    font-size:35px;
+    font-weight:bold;
+    color: darkred;
+
+}
+
+#justifyText {
+    text-align: justify;
+    line-height: 1 ;
+    float: left;
+    font-family: "Garamond", serif;
+    font-size:20px;
+}
+div.center {
+    text-align: center;
+}
+
+#figcaptionTag {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
+#figcaptionTag2 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
+#figcaptionTag3 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
+#figcaptionTag4 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
+#figcaptionTag5 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
+#figcaptionTag6 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
+p {
+    line-height: 2;
+    text-align: justify;
+    font-size:20px;
+    font-family: "Garamond", serif;
+}
+
+p2 {
+
+    line-height: 2;
+    text-align: justify;
+    font-size:22px;
+    font-family: "Garamond", serif;
+    font-weight:bold;
+}
+
+#title {
+    font-size:25px;
+    color: darkred;
+    font-weight:bold;
+    font-family: "Garamond", serif;
+    text-align: center;
+}
+
+#title2 {
+    font-size:25px;
+    color: darkred;
+    font-weight:bold;
+    font-family: "Garamond", serif;
+    text-align: center;
+
+}
+
+#title3 {
+    font-size:25px;
+    color: darkred;
+    font-weight:bold;
+    font-family: "Garamond", serif;
+    text-align: center;
+}
+#title4 {
+    font-size:25px;
+    color: darkred;
+    font-weight:bold;
+    font-family: "Garamond", serif;
+    text-align: center;
+}
