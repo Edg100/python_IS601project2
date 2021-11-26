@@ -98,6 +98,71 @@ body {
     font-weight:bold;
 }
 
+#figcaptionTag4 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
+#figcaptionTag5 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag6 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag7 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag8 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag9 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag10 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag11 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag12 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
 @media only screen and (max-width: 600px) {
     .hidden {
         visibility: hidden;
@@ -132,5 +197,169 @@ div.center {
 p {
     line-height: 2;
     text-align: justify;
+    font-size:20px;
+}
+#title {
+    font-size:25px;
+    color: darkred;
+    font-weight:bold;
+    font-family: "Garamond", serif;
+    text-align: center;
+}
+
+#title2 {
+    font-size:25px;
+    color: darkred;
+    font-weight:bold;
+    font-family: "Garamond", serif;
+    text-align: center;
+
+}
+
+#title3 {
+    font-size:25px;
+    color: darkred;
+    font-weight:bold;
+    font-family: "Garamond", serif;
+    text-align: center;
+}
+#title4 {
+    font-size:25px;
+    color: darkred;
+    font-weight:bold;
+    font-family: "Garamond", serif;
+    text-align: center;
+}
+#title5 {
+    font-size:25px;
+    color: darkred;
+    font-weight:bold;
+    font-family: "Garamond", serif;
+    text-align: center;
+}
+#title6 {
+    font-size:25px;
+    color: darkred;
+    font-weight:bold;
+    font-family: "Garamond", serif;
+    text-align: center;
+}
+#title7 {
+    font-size:25px;
+    color: darkred;
+    font-weight:bold;
+    font-family: "Garamond", serif;
+    text-align: center;
+}
+#paraHeaders {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders2 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders3 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders4 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders5 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders6 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders7 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders8 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders9 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders10 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders11 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders12 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders13 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders14 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders15 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders16 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders17 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders18 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders19 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders20 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders21 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders22 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders23 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders24 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders25 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders26 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders27 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders28 {
+    font-weight:bold;
     font-size:20px;
 }

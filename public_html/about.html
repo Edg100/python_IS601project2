@@ -24,42 +24,25 @@
 
 <div class="main">
     <article id="primaryContent">
-        <div id="gfg">Early Stages Of The Internet (1958-1998)</div>
+        <div id="gfg">Arrange Act Assert (AAA) Testing</div>
         <br>
         <br>
-        <h2 id="geeks">The Internet And Advancements</h2>
-             <p>Going back to 1969 in the history of modern computer and device networking, when Advanced Research Projects Agency Network (ARPANET)
-             became the first connected computer network. It implemented the TCP/IP protocol suite, which later became the Internet. ARPANET was
-             developed by the Advanced Research Projects Agency (ARPA), a subset of the US Department of Defense. Why did the DoD need to develop
-             networked computers? The goal of ARPANET was to keep lines of communication open if the USA and the USSR decided to exchange nuclear devices.
-             Below is a timeline of events on how everything started with the computer network about 52 years ago to what we know now as the Internet.</p>
+        When we are writing test, we must follow a pattern that will help the developer to make sure everything is tested
+        and that every action in the code works as expected. There three ways you can write good tests with Arrange, Act and Assert pattern.
+        <h2 id="geeks">Definitions</h2>
+            <p id="paraHeaders">Arrange</p>
+                <p>This where all test cases are set up and organize in way that can be easily followed and clearly defined.
+                    We can have a better picture what are the test that will take action in the following procedures of the AAA testing.</p>
+            <p id="paraHeaders2">Act</p>
+                <p> This is a significant procedure because this cover the main part of the function to be tested, and developer should keep
+                    a clear understanding that is the good and desire output of this test.</p>
+            <p id="paraHeaders3">Assert</p>
+                <p>This is connected to the ACT procedure where assert checks for quality of the output. Assertions will ultimately determine if the test passes or fails.</p>
 <br>
-            <p id="title">Computer Network Key Chronological Events</p>
-                    <p>1958- ARPA (<a href="https://en.wikipedia.org/wiki/DARPA">Advanced Research Projects Agency</a>) was created to improve technological advances.</p>
-                    <p>1968- First people who worked in the network idea or project to have computers to communicate.</p>
-                        <ul>
-                            <li><a href="https://en.wikipedia.org/wiki/Robert_Taylor_(computer_scientist)">Bob Taylor</a> wanted to build one single network and asked for funding for work in a computer network.</li>
-                            <li> <a href="https://en.wikipedia.org/wiki/Lawrence_Roberts_(scientist)">Lawrence Roberts</a> created the first network between two computers and designed the computer network.</li>
-                        </ul>
-                    <p>1969- All four sites were interconnected: UCLA, SRI, UCSB, University of Utah.</p>
-                    <p>1971-  <a href="https://www.techtarget.com/searchnetworking/definition/ARPANET#:~:text=ARPANET%20was%20the%20network%20that,interconnection%20of%20four%20university%20computers.">ARPANET</a> had 18 mainframe computers connected to the network.</p>
-                    <p>1971- Email application (Killer app) introduced by <a href="https://en.wikipedia.org/wiki/Robert_Taylor_(computer_scientist)">Raymond Tomlinson</a>.</p>
-                    <p>1972- ARPANET demonstrated the computer network in Washington DC.</p>
-                    <p>1973- <a href="https://en.wikipedia.org/wiki/Robert_Taylor_(computer_scientist)">Vint Cerf</a>(See 2nd picture in the right) and Bob Kahn worked together to develop rules and procedures known as TCP/IP Protocol that would allow passing packets back and forth. </p>
-                    <p>1983- <a href="https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/">TCP/IP</a> was introduced as the universal standard of protocols.</p>
-                    <p>1992- The Internet became public by a bill passed by Congress and became law a few months after.</p>
-            <p>This video shows a brief review how computer network originated until what we know now as the Internet (a film by Melih Bilgil):  </p>
-                    <div class="center">
-                        <iframe
-                                width="420"
-                                height="245"
-                                src="https://www.youtube.com/embed/9hIQjrMHTv4"
-                                title="Computer Network History"
-                                allowfullscreen
-                        ></iframe>
-                    </div>
+            <p id="title">Using AAA Testing in the Calculator Project</p>
+
 <br>
-            <p id="title2">World Wide Web Key Chronological Events</p>
+            <p id="title2">Why Testing Is Important In Software Development?</p>
                     <p>In 1989 these events happened:</p>
                         <ul>
                             <li> <a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> (Figure.4) developed a software for easier and manageable ways to follow the information on the Internet known as the World Wide Web.</li>
@@ -74,82 +57,7 @@
                 <img style="width:40%" src="images/image8.jpg" alt="Tim Berners-Lee photo by freeasinfreedom"/>
                 <figcaption id="figcaptionTag" style="width:40%">Figure.4 - Tim Berners-Lee (Photo by freeasinfreedom)</figcaption>
             </figure>
-<br>
-            <p id="title3">Browser Wars and Advances</p>
-                    <p><a href="https://en.wikipedia.org/wiki/Microsoft">Microsoft</a> </p>
-                        <ul>
-                            <li>Founder <a href="https://www.w3.org/People/Berners-Lee/">Bill Gates</a> (Figure.5) </li>
-                            <li>By 1993, 90% of the world’s PCs were running Microsoft Windows</li>
-                            <li>Multimillionaire company</li>
-                            <li>By 1997, Internet Explorer was dominating the business of browsers over Netscape</li>
-                            <li>Microsoft won the browser wars at that time</li>
-                        </ul>
-            <figure>
-                <img style="width:40%" src="images/image9.jpg" alt="Bill Gates photo by IsaacMao"/>
-                <figcaption id="figcaptionTag2" style="width:40%">Figure.5 - Bill Gates (Photo by IsaacMao)</figcaption>
-            </figure>
-                    <p><a href="https://en.wikipedia.org/wiki/Netscape">Netscape</a> </p>
-                        <ul>
-                            <li>Entrepreneur company that hired few enthusiastic and smart college students to build innovative
-                                web browsers among them was Marc Andreessen from Mosaic. </li>
-                            <li>1994- New Web Browser called  <a href="https://en.wikipedia.org/wiki/Netscape_Navigator">Navigator</a>was launched to the public</li>
-                            <li>Became a success at that time with millions of downloads with the latest browser</li>
-                            <li>Netscape started its collapse when Internet Explorer was given for free</li>
-                        </ul>
-                    <p>Figure.6 shows the Netscape Navigator browser in Apple-2 PC</p>
-                        <figure>
-                            <img style="width:40%" src="images/image10.jpg" alt="Netscape Navigator"/>
-                            <figcaption id="figcaptionTag3" style="width:40%">Figure.6 - Netscape Navigator (Photo by Matthew Burpee)</figcaption>
-                        </figure>
-                    <p>U.S Government</p>
-                        <ul>
-                            <li>1998- A <a href="https://en.wikipedia.org/wiki/United_States_v._Microsoft_Corp.">historic lawsuit </a>against Microsoft fueled by Netscape and the government</li>
-                            <li>Bill Gates was considered a high-tech terrorist</li>
-                            <li>Microsoft was found guilty and asked to be separated into company(s)</li>
-                        </ul>
-<br>
-            <p id="title4">Search Revolution</p>
-                    <p>Main Internet search companies</p>
-                        <ul>
-                            <li><a href="https://en.wikipedia.org/wiki/Yahoo!">Yahoo!</a></li>
-                            <li><a href="https://techmonitor.ai/what-is/what-is-google">Google</a></li>
-                            <li><a href="https://en.wikipedia.org/wiki/Excite#:~:text=Excite%20(stylized%20as%20excite)%20is,and%20a%20customizable%20user%20homepage.">Excite</a></li>
-                        </ul>
-                    <p>Yahoo!</p>
-                        <ul>
-                            <li>1994- Founded by Jerry Yang and David Filo (Figure.7)</li>
-                            <li><a href="https://en.wikipedia.org/wiki/Jerry_Yang">Jerry Yang</a> and <a href="https://en.wikipedia.org/wiki/David_Filo">David Filo</a> started building and collecting different websites for a fantasy sports game that later formed Yahoo!</li>
-                            <li>2007 search companies such as Yahoo and Google generated billions in revenues.</li>
-                        </ul>
-            <figure>
-                <img style="width:40%" src="images/image11.jpg" alt="Jerry Yang and David Filo by Jeremy Johnstone"/>
-                <figcaption id="figcaptionTag4" style="width:40%">Figure.7 - Jerry Yang (right) and David Filo (left) (Photo by Jeremy Johnstone)</figcaption>
-            </figure>
-                    <p>Excite</p>
-                        <ul>
-                            <li>1994- Founded by <a href="https://www.w3.org/People/Berners-Lee/">Joe Kraus</a></li>
-                            <li>Competitor of Yahoo!</li>
-                            <li>Made of pure software that queries thousands of sites instantaneously</li>
-                        </ul>
-                    <p>Google</p>
-                        <ul>
-                            <li>1998- Founded by <a href="https://en.wikipedia.org/wiki/Larry_Page">Larry Page</a> and  <a href="https://en.wikipedia.org/wiki/Sergey_Brin">Sergey Brin</a> (Figure.8)</li>
-                            <li>Derived from the word ‘Googol’ which means 10 raised to the power of 100</li>
-                            <li>Google interprets the links between the web pages</li>
-                            <li>It accesses the web pages by the importance they receive and popularity</li>
-                            <li>A search engine that cares about search</li>
-                            <li><a href="https://en.wikipedia.org/wiki/Bill_T._Gross">Bill Gross</a> from <a href="https://en.wikipedia.org/wiki/Idealab">Idealab</a> helped Google to be profitable with keywords that users type in the search query</li>
-                        </ul>
-            <figure>
-                <img style="width:40%" src="images/image12.jpg" alt=" Larry Page and Sergey Brin by Steve Rhodes"/>
-                <figcaption id="figcaptionTag5" style="width:40%">Figure.8 - Larry Page (right) and Sergey Brin (left) (Photo by Steve Rhodes)</figcaption>
-            </figure>
-                    <p>Advertising in search webs</p>
-                            <ul>
-                                <li>Way to sells and promote products</li>
-                                <li>A lot of concerns for Yahoo founders because of its actual usage.</li>
-                                <li>Late 90's web ads generated a lot of revenue for the businesses</li>
-                            </ul>
+
 
     </article>
 </div>

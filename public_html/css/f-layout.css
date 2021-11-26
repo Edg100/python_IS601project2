@@ -219,3 +219,20 @@ p2 {
     font-family: "Garamond", serif;
     text-align: center;
 }
+
+#paraHeaders {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders2 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders3 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders4 {
+    font-weight:bold;
+    font-size:20px;
+}

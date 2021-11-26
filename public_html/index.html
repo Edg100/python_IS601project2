@@ -19,7 +19,6 @@
             height: 690px;
             background-image: url("images/sample3.jpg");
             background-repeat: no-repeat;
-            background-size: contain;
             margin-bottom: auto;
             background-size: cover;
         }
@@ -43,7 +42,7 @@
         <div id="gfg">Introduction</div>
         <br>
         <br>
-            <h2>Python</h2>
+            <h2>Python Overview</h2>
                 <p> Python is a "popular" programming language that is used in many areas from machine learning to building
                     websites, and software testing. This program is very flexible, and designed to be used by programmers
                     and non-programmers, and this is the reason of its popularity. Python is typically used for developing
@@ -57,48 +56,233 @@
                     allowfullscreen
             ></iframe>
         </div>
-            <h3>First computers</h3>
-                <p>In the picture below (Figure.1) shows the ENIAC computer which was the first general-purpose electronic digital computer. 'Electronic Numerical
-                    Integrator And Computer' was 150 feet wide with 20 banks of flashing lights. Ca. 1946</p>
-                <figure>
-                    <img style="width:40%" src="images/image2.jpg" alt="ENIAC computer by Everett Collection"/>
-                    <figcaption id="figcaptionTag" style="width:40%">Figure.1 - ENIAC computer (Photo by Everett Collection)</figcaption>
-                </figure>
-                <p>After ENIAC computer was introduced back in 1946, personal computers
-                    were followed by  <a href="https://en.wikipedia.org/wiki/Altair_8800">Altair 8800</a> (Figure.2),
-                    and  <a href="https://en.wikipedia.org/wiki/Apple_I">Apple-1</a> (Figure.3)</p>
-                <figure>
-                    <img style="width:40%" src="images/image4.jpg" alt="Altair 8800 Image by euthman"/>
-                    <figcaption id="figcaptionTag2" style="width:40%">Figure.2 - Altair 8800 Computer (Photo by euthman)</figcaption>
-                </figure>
-                <figure>
-                    <img style="width:40%" src="images/image5.jpg" alt="Apple-1 Image by Dr-Chomp"/>
-                    <figcaption id="figcaptionTag3" style="width:40%">Figure.3 - Apple-1 (Photo by Dr-Chomp)</figcaption>
-                </figure>
+            <h3 id="title">Pylint</h3>
+                <p> <a href="https://pylint.pycqa.org/en/latest/">Pylint</a> is a tool that checks for errors in Python code, tries to enforce a coding standard and looks
+                    for code smells. It can also look for certain type errors, it can recommend suggestions about how particular
+                    blocks can be refactored and can offer you details about the code's complexity.</p>
+            <h3 id="title2">How to install Pylint?</h3>
+                <p id="paraHeaders">Installing Pylint in MacOS</p>
+                    <ol>
+                        <li>Open Command Prompt, and ensure you have Python installed</li>
+                        <li>Type python --version. If it returns Python 3.x.x, type pip --version to verify you have pip installed.</li>
+                        <li>If --version returns Python 2.x.x, type python3 --version to verify you have Python 3 installed. Then, type pip3 --version to verify you have it installed.</li>
+                        <li>To install Pylint for Python 2.xxx run following command: pip3 install pylint.</li>
+                        <li>If Python version is 3.x.x, you need to the following command : pip install pylint.</li>
+                    </ol>
+                <p id="paraHeaders2">Installing Pylint on Windows</p>
+                    <ol>
+                        <li>Open Command Prompt, and ensure you have Python installed.</li>
+                        <li>Type python --version to verify you have 3.x.x installed</li>
+                        <li>Type pip --version to verify you have pip installed.</li>
+                        <li>To install Pylint, run the following command: pip install pylint.</li>
+                    </ol>
+                <p id="paraHeaders3">Other Operating Systems</p>
+                    <ol>
+                        <li>For Fedora run command: sudo yum install pylint</li>
+                        <li>For Ubuntu run command:sudo apt-get install pylint</li>
+                    </ol>
+                <h3 id="title3">Upgrading Pylint Steps</h3>
+                    <ol>
+                        <li>If Pylint has been installed for sometime, it is recommended to upgrade it.</li>
+                        <li>Check the Pylint version by running the following command: pylint --version</li>
+                        <li>To upgrade to the latest version of Pylint, run the following command: pip install pylint --upgrade.</li>
+                        <li>If you want to install a specific version, run the following command with the version you wish to install. Ex: to install version 2.7.1, run the following:
+                            pip install --force-reinstall pylint==2.7.1</li>
+                    </ol>
 
-            <h4> Important Chronological Events About The Internet</h4>
-            <ul>
-                <li>Computer Network Key Chronological Events</li>
-                <li>World Wide Web Key Chronological Events</li>
-                <li>Browser Wars and Advances</li>
-                <li>Search Revolution</li>
-                <li>E-commerce</li>
-                <li>People and Web</li>
-            </ul>
+                <h3 id="title4">How to Run And Configure Pylint?</h3>
+                    <p id="paraHeaders4">In Command prompt</p>
+                        <ol>
+                            <li>To get a full report run the command with the file name: pylint fileName.py</li>
+                            <li>To return all the errors within the file, run pylint -rn and the file name: pylint -rn fileName.py</li>
+                            <li>To return all the errors within the file, run pylint -E (capital E) and the file name:pylint -E fileName.py </li>
+                        </ol>
+                    <p id="paraHeaders5">In Microsoft Visual Studio</p>
+                        <ol>
+                            <li>Go to Tools/External Tools...</li>
+                            <li>Click Add button</li>
+                            <li>Fill in the arguments</li>
+                            <li>Title: pylint</li>
+                            <li>Command: C:\Python27\Scripts\pylint.exe. Note:Insert full path instead of ...\mantid\tools\Pylint\pylint.cfg</li>
+                            <li>Arguments: --rcfile ...\mantid\tools\Pylint\pylint.cfg $(ItemFileName)</li>
+                            <li>Initial directory: $(ItemDir). Note: $(ItemFileName) and $(ItemDir) is a macro inserted</li>
+                            <li>Uncheck`Close on exit` and check`Use Output window`</li>
+                            <li>Leave rest of settings as default and click `OK` on External Tools</li>
+                            <li>Open python file</li>
+                            <li> Select Tools/pylint </li>
+                            <li>pylint violations should run inside Visual Studio</li>
+                        </ol>
+                    <p id="paraHeaders6"> In PyCharm -JetBrains</p>
+                        <ol>
+                            <li>Go to File/Settings/ and select Project | Python Interpreter.</li>
+                            <li>There is a list of packages in the window, and search for pylint</li>
+                            <li>Select pylint and press Alt+Insert to install the package</li>
+                            <figure>
+                                <img style="width:80%" src="images/pylint2.jpg" alt="PyCharm fro Pylint install"/>
+                                <figcaption id="figcaptionTag" style="width:70%">Figure.1 - Installing Pylint in PyCharm for Cal part 1</figcaption>
+                            </figure>
+                            <li>Go to File/Settings/Tools/External Tools/ in PyCharm</li>
+                            <li>Click add "+"</li>
+                            <figure>
+                                <img style="width:80%" src="images/pylint1.jpg" alt="PyCharm External Tool setup"/>
+                                <figcaption id="figcaptionTag2" style="width:70%">Figure.2 - Adding Pylint in External Tools</figcaption>
+                            </figure>
+                            <li>Add configuration options as shown below:</li>
+                            <li>Group: The name of the external tool group to show in the Tools | External Tools menu</li>
+                            <li>Name: The external tool name</li>
+                            <li>Description: An optional description</li>
+                            <li>Program: The path to the pylint executable ($PyInterpreterDirectory$ is a directory
+                                where the Python interpreter of the current project is placed). Example:$PyInterpreterDirectory$\pylint</li>
+                            <li>Argument: Specifies what files and folders should be checked (car.py and test in this example) and sets
+                                the output format for pylint errors. Example:--msg-template="$FileDir$\{path}:{line}:{column}:{C}:({symbol}){msg}" car.py test</li>
+                            <li>Working directory: Project root directory</li>
+                            <li>Important note:It is recommended to enable all options from the Advanced Options section and set up the Output
+                                filters to insert links to the files with errors into the pylint output, so you can quickly jump to an error or warning in your code.</li>
+                            <figure>
+                                <img style="width:80%" src="images/pylint3.jpg" alt="PyCharm Configuration"/>
+                                <figcaption id="figcaptionTag3" style="width:70%">Figure.3 - Configuring Pylint</figcaption>
+                            </figure>
+                            <li>Click OK to save the changes. Complete adding an external tool by clicking Apply and OK in the External Tools window.</li>
+                            <li>Now you can access this external tool from the Tools/External Tools.</li>
+                            <figure>
+                                <img style="width:40%" src="images/pylint4.jpg" alt="PyCharm Execution"/>
+                                <figcaption id="figcaptionTag4" style="width:40%">Figure.4 - Running Pylint</figcaption>
+                            </figure>
+                            <li>You might also want to add it to the Run/Debug Configuration of your application for which we will show you next</li>
+                        </ol>
+                    <p id="paraHeaders7">Configuring And Running Pylint from the terminal</p>
+                        <ol>
+                            <li>In the calculator project, we created one root directory called "cal2"</li>
+                            <li>Under cal2 folder add .pylintrc which contains all configuration information for Pylint in the project</li>
+                            <li>Notice the file has "." in front of the name for security since we don't want to expose configuration files over the web interface or console</li>
+                            <li>Also, pytest-pylint is added to the requirement.py file to install this package to check source code with pylint.</li>
+                            <figure>
+                                <img style="width:80%" src="images/pylint5.jpg" alt="Pylint Config in PyCharm Project"/>
+                                <figcaption id="figcaptionTag5" style="width:70%">Figure.5 - Pylint Setup in PyCharm Project Calculator</figcaption>
+                            </figure>
+                            <li>Once, we run the docker image, all pylint and packages are installed and ready to use </li>
+                            <li>We run Pylint together with Pytest and coverage (another testing tool to check testing coverage)
+                                in the docker image terminal. This is the command: pytest --cov --pylint</li>
+                            <figure>
+                                <img style="width:80%" src="images/pylint6.jpg" alt="PyCharm Execution"/>
+                                <figcaption id="figcaptionTag6" style="width:70%">Figure.6 - Running Pylint</figcaption>
+                            </figure>
+                        </ol>
         <br>
-        <p>In the next pages, we talk about the history of the Internet and how it has developed throughout the years.</p>
+                <h3 id="title5">Pylint Tips and Tricks</h3>
+                    <p id="paraHeaders8">Disable Pylint Errors</p>
+                        <p>Sometimes pylint thinks there is an issue in your code even tough it is fine. We can disable those
+                            messages (See Figure 7). For example, we may get an error saying error with redefined-outer-name or unused-argument.
+                            We can write #pylint: disable="error message" , in the lines wherever Pylint is reporting these errors. </p>
+                        <figure>
+                            <img style="width:80%" src="images/pylint7.jpg" alt="Disable Errors for Pylint"/>
+                            <figcaption id="figcaptionTag7" style="width:70%">Figure.7 - Disable Errors for Pylint</figcaption>
+                        </figure>
+                    <p id="paraHeaders9">Use Of "Pass" Statement</p>
+                        <p>We can use pass statement as a placeholder when you know the code is going fail and avoid errors
+                            for empty code in loops, functions, and class definitions. This is an example below:</p>
+                        <figure>
+                            <img style="width:80%" src="images/pylint8.jpg" alt="Pass in Pylint"/>
+                            <figcaption id="figcaptionTag8" style="width:70%">Figure.8 - To Pass The Test In Pylint When No Docstring </figcaption>
+                        </figure>
         <br>
-        <h5>External Links</h5>
+                <h3 id="title6">Object-Oriented Programming (OOP) Main Components</h3>
+                    <p id="paraHeaders10">Factory</p>
+                        <p>The term factory in programming is basically a place in the code where we can create and return a function. This
+                            facilitates the return of many functions from a parameter's function, and provides a great benefit
+                            when creating new functions. In Figure 9, it shows a factory function from our calculator project
+                            where two attributes are returned (num_a and num_b) after values are inserted into the testing or execution of the code.
+                        </p>
+                    <p id="paraHeaders11">Instantiation</p>
+                        <p>For our calculator project we created a class instantiation (see Figure 9) with a created instance of class
+                            in this case called "Calculation" and the constructor parameters. Therefore, instantiation is the process to create
+                            objects from a class to be used in another class or function.</p>
+                    <p id="paraHeaders12">Object</p>
+                        <p>An object is an element, data also known as instance of a class because it contains all attributes
+                            and methods that a class need to integrate a complete system. In Figure 9, we see an object called
+                            "self" which represents the object inside the class that is being shared with other child classes such as addition and division.</p>
+                    <p id="paraHeaders13">Class </p>
+                        <p>Now, a class is a set of objects with similar behaviour where attributes and methods share some similarities.
+                            In figure 9 (see below), Calculation is the class compose by objects and methods. </p>
+                        <figure>
+                            <img style="width:80%" src="images/oop3.jpg" alt="Class and Objects Picture"/>
+                            <figcaption id="figcaptionTag9" style="width:70%">Figure.9 - Calculation File Showing Some OOP Components </figcaption>
+                        </figure>
+                    <p id="paraHeaders14">Namespace</p>
+                        <p>It is a collection of names that are organized in a way that is easy to find in the code where
+                            the classes are originated in the code. An example will be calc.division where calc is the folder where
+                            all calculation are located, and division is the class that we are getting the information. (See Figure 10)</p>
+
+                    <p id="paraHeaders15" >Constructor</p>
+                        <p>This is the first part in the code that is processed whenever an object is created and instantiated.
+                            For example in Figure 9 (see above), we have 3 objects defined in the parameter that means the constructor is called 3 times.</p>
+                    <p id="paraHeaders16">Fixture</p>
+                        <p>It is a function that will run before each test function. This can be seemed as a database that
+                            provides some data to the test methods, and is used by Pytest to read and execute each test function.
+                            This is the command that is used for fixture :@pytest.fixture. In the calculator project, we have a
+                            file called calculation.py (See Figure 11 below) and there we have a fixture defined that will be
+                            executed by Pytest for every value pass into the function. </p>
+                    <p id="paraHeaders17">Type Hinting</p>
+                        <p>Type hinting is used to indicate the type of value the parameter in the function is.
+                        In our example below (Figure 10), it shows that the type of values from the factory method needs to be tuple.</p>
+                    <p id="paraHeaders18">Type Casting</p>
+                        <p>Type casting is a method utilize to covert the values inside a return function into a desired
+                            data that the developer needs in the code. From one of our branches for the calculator project (part 5)
+                            , we are saying here that the values inside the return function have to tuple. (See Figure 10 below) </p>
+                        <figure>
+                            <img style="width:80%" src="images/oop4.png" alt="Class and Objects Picture"/>
+                            <figcaption id="figcaptionTag10" style="width:70%">Figure.10 - Calculation File Showing Some OOP Components </figcaption>
+                        </figure>
+                    <p id="paraHeaders19">Unit Test</p>
+                        <p>The purpose for unit test is to test a specific part of the code, and to ensure is intended to
+                            do one single task or operation with few inputs and to return a single output. Figure 11 illustrates
+                            a unit test for addition for the calculator project, we are basically testing if the calculator add two numbers and return the result expected. </p>
+                        <figure>
+                            <img style="width:80%" src="images/oop2.jpg" alt="Class and Objects Picture"/>
+                            <figcaption id="figcaptionTag11" style="width:70%">Figure.11 - Calculation File Showing Some OOP Components </figcaption>
+                        </figure>
+                    <p id="paraHeaders20">Static</p>
+                        <p>The word static in programming language means that a member is on class level rather on the instance level.
+                        Therefore, variables that are static are within the class, and they are not instantiated. Figure 12 shows
+                        a static method that are within the calculator class only.</p>
+                    <p id="paraHeaders21">Class Method</p>
+                        <p> Class method is a method that pertains to the class and not the attributes or functions of the same class.
+                            In figure 9, we see the class method in the calculation file where the parameter cls is there to take the first parameter only.</p>
+                    <p id="paraHeaders22">Facade</p>
+                        <p>Facade is one of the design patterns used in OOP that act as interface between clients and the
+                            subsystem components to reduce complexity. We can see this pattern being used in our calculator project
+                            where there is a class with multiple and simplified methods. For example, in the calculation class which
+                            deals with 4 different methods: addition, division, subtraction and multiplication. </p>
+                    <p id="paraHeaders23">Design Patterns Used in the Calculator Project</p>
+                        <p>Facade is the designed pattern used for the calculator project because we can manage all
+                            interfaces in this case 4 math operations (division, addition, subtraction and multiplication)
+                            into a one interface to use as the main one. </p>
+                    <p id="paraHeaders24">Method</p>
+                        <p>Method is a process or procedure that an object perform. Figure 12 shows methods that perform
+                            a unique function in the calculator class.</p>
+                    <p id="paraHeaders25">Property</p>
+                        <p>A property in OOP is a composed by one or two functions (get and set) that retrieves and sets a value.
+                        In figure 12, we can see the history property that retrieves the information from all the methods, and set
+                        the value accordingly. </p>
+                        <figure>
+                            <img style="width:80%" src="images/oop1.jpg" alt="Method and Property Picture"/>
+                            <figcaption id="figcaptionTag12" style="width:70%">Figure.12 - Calculation File Showing Some OOP Components </figcaption>
+                        </figure>
+        <br>
+        <h3 id="title7">External Links</h3>
 <br>
-            <p>External Links:</p>
+            <p id="paraHeaders26">External Links:</p>
                 <ul>
                     <li>Wikipedia: https://simple.wikipedia.org/wiki/</li>
+                    <li>Pylint: https://pylint.pycqa.org/en/latest/</li>
+                    <li>https://www.mantidproject.org/How_to_run_Pylint.html</li>
+                    <li>https://www.jetbrains.com/help/pycharm/configuring-third-party-tools.html#web-browsers</li>
                 </ul>
-            <p>Video Sources:</p>
+            <p id="paraHeaders27">Video Sources:</p>
                 <ul>
                     <li>YouTube: https://www.youtube.com/</li>
                 </ul>
-            <p>Image Credits:</p>
+            <p id="paraHeaders28">Image Credits:</p>
                 <ul>
                     <li>Creative Commons: https://creativecommons.org/</li>
                     <li>Shutterstock: https://www.shutterstock.com/</li>
@@ -106,7 +290,7 @@
 
     </article>
     <div id="secondaryContent">
-        <img height="310" width="460" src="images/image1.jpg" alt="image content"/>
+        <img height="310" width="460" src="images/image20.jpg" alt="image content for Python"/>
     </div>
 
     <div>
