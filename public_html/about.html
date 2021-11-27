@@ -29,6 +29,8 @@
         <br>
         When we are writing test, we must follow a pattern that will help the developer to make sure everything is tested
         and that every action in the code works as expected. There three ways you can write good tests with Arrange, Act and Assert pattern.
+        For the calculator project, we will use Unit Testing which is one of the basic ones for AAA testing , and because we are
+        testing every part of the code in individual parts.
         <h2 id="geeks">Definitions</h2>
             <p id="paraHeaders">Arrange</p>
                 <p>This where all test cases are set up and organize in way that can be easily followed and clearly defined.
@@ -40,25 +42,144 @@
                 <p>This is connected to the ACT procedure where assert checks for quality of the output. Assertions will ultimately determine if the test passes or fails.</p>
 <br>
             <p id="title">Using AAA Testing in the Calculator Project</p>
+                <p>In the following tutorial we will use Pytest which is very powerful tool and well-known for managing all kind of testing scenarios.
+                    We will use PyCharm as our tool to develop and create a container where will host the python container image for our calculator.</p>
+                <p>First, in order to test the calculator we need to create a separate folder for test in the same root
+                    directory where the calculator folder is located</p>
+                <p>Next, we can create two files inside the test folder call _init_.py and calculator_test.py.
+                Note: the _init_.py this file sets up how packages or functions will be imported into your other files just the same as _init_ function does in a class.
+                And, the calculator_test.py is the file that will test the actual calculator.py file which is our main file for our project.
+                Below is how the calculator directory looks like:</p>
+                    <figure>
+                        <img style="width:50%" src="images/pytest1.jpg" alt="Calculator Directory"/>
+                        <figcaption id="figcaptionTag2" style="width:50%">Figure.1 Calculator Directory</figcaption>
+                    </figure>
+                <p>Next, we added pytest package to requirements.txt (this text file is created under the root folder of
+                    the calculator project), so it can install pytest in the container . This files contains all packages that
+                    will be installed when the container image is started for the calculator</p>
+                <p>Now, we can create the first test in the calculator_test.py file that will test the result. This is test
+                    is to ensure that the result function returns the value that we are specifying here in this case the number "0".
+                    See figure 2 below to show you how this is written in the code. </p>
+                <p>Important: for every function we are adding here we need to add: test_(name of the test) in order for
+                    pytest to recognize it as a test function</p>
+                <p>Next, we will create the other test scenarios for all calculations, and demonstrate the usage of AAA testing.
+                    We will start with the addition testing. For arrange we add: calc = Calculator(), for act : result = calc.add_numbers(4,2) and for assert: assert result == 6
+                    Note: for the arrangement procedure we are defining a variable "cal" that is our class "Calculator".
+                    Next, we are adding two numbers 4 and 2 which is our act in this case, and lastly we assert the result to be 6. See figure 2 for demonstration of the code. </p>
+                <p>We apply the same process to all other calculation testing to complete the calculator test file. See figure 2 for the complete
+                    code of the test file</p>
+                    <figure>
+                        <img style="width:80%" src="images/pytest2.jpg" alt="Calculator_test File with AAA Testing Steps Defined"/>
+                        <figcaption id="figcaptionTag3" style="width:80%">Figure.2 Calculator_test File with AAA Testing Steps Defined</figcaption>
+                    </figure>
+                <p>Next, we will run the pytest command in the terminal to check the results.
+                    Note: This is run against the calculator_test.py file, and it is a general check we do here. We
+                    should see no errors are there, and that everything pass (see figure 3)</p>
+                    <figure>
+                        <img style="width:80%" src="images/pytest3.jpg" alt="Running Pytest Command for General Checks"/>
+                        <figcaption id="figcaptionTag4" style="width:80%">Figure.3 Calculator_test File with AAA Testing Steps Defined</figcaption>
+                    </figure>
+                <p>For a more complete test we run the command in the same terminal: pytest --cov –pylint. Here we have cov and pylint.
+                    Cov checks that every part of the main code has a test associated with it, and pylint that checks that
+                    the code follows Python coding standards</p>
+                    <figure>
+                        <img style="width:80%" src="images/pytest4.jpg" alt="Running Pytest Command for General Checks"/>
+                        <figcaption id="figcaptionTag5" style="width:80%">Figure.4 Pytest, Coverage and Pylint Output</figcaption>
+                    </figure>
+                <p>Next, We will use Travis CI to get the results from the testing. After we run: pytest --cov –pylint on the branches specify in the.travis.yml file
+                    Note: Check for any errors in Travis CI this is where graders will check
+                </p>
+                <p>Once everything looks good in Travis and we get a “Passing” (see figure 5), we can click there in passing and
+                    select “Markdown” copy the result URL and paste it in the readme file in Pycharm,  and do a commit in PyCharm.
+                    Important: In order to get the passing in Travis we need the master branch with all final changes there to be in Travis
+                </p>
+                    <figure>
+                        <img style="width:80%" src="images/pytest5.jpg" alt="Travis CI"/>
+                        <figcaption id="figcaptionTag6" style="width:80%">Figure.5 Travis CI</figcaption>
+                    </figure>
+                <p>The goal for Coveralls is to ensure that all your new code is fully covered, and see coverage trends emerge. Works with any CI service.</p>
+                <p>To add the coverage badge we use Coveralls that syncs with GitHub. These are the steps:
+                    -	add your github repo to coveralls
+                    -	add coveralls to your requirements.txt
+                    -	add this in .travis.yml file:
 
+                    after_success:
+                    - coveralls
+                </p>
+                    <figure>
+                        <img style="width:50%" src="images/pytest6.jpg" alt="Coveralls Configuration"/>
+                        <figcaption id="figcaptionTag7" style="width:50%">Figure.6 Coveralls Configuration</figcaption>
+                    </figure>
+                    <figure>
+                        <img style="width:80%" src="images/pytest7.jpg" alt="Coveralls GUI"/>
+                        <figcaption id="figcaptionTag8" style="width:80%">Figure.7 Coveralls GUI</figcaption>
+                    </figure>
+                <p>Now, we can share this project in GitHub from PyCharm, and edit the README.MD file to add teh badges from Travis and Coveralls</p>
+                    <figure>
+                        <img style="width:80%" src="images/pytest8.jpg" alt="GitHub Readme file with Badges"/>
+                        <figcaption id="figcaptionTag9" style="width:80%">Figure.8 GitHub Readme file with Badges</figcaption>
+                    </figure>
+                <p>Lastly, to use external data for testing, we use can follow this high-level explanation:</p>
+                    <ol>
+                        <li>We can set this up at the top of each test module: THIS_DIR = os.path.dirname(os.path.abspath(__file__))</li>
+                        <li>Next, we can have: my_test_data_path = os.path.join(THIS_DIR, os.pardir, '.../test_data.csv')</li>
+                        <li>Or we can use this format, but make sure the .csv file is in the same directory as the project:my_test_data_path = os.path.join(THIS_DIR, 'test_data.csv') </li>
+                    </ol>
 <br>
             <p id="title2">Why Testing Is Important In Software Development?</p>
-                    <p>In 1989 these events happened:</p>
-                        <ul>
-                            <li> <a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a> (Figure.4) developed a software for easier and manageable ways to follow the information on the Internet known as the World Wide Web.</li>
-                            <li>There were only 50 web pages on the Internet.</li>
-                        </ul>
-                    <p>In 1993 these events happened:</p>
-                        <ul>
-                            <li> <a href="https://a16z.com/author/marc-andreessen/">Marc Andreessen</a> introduced a user-friendly software to browse the World Wide Web called <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)">Mosaic</a>.</li>
-                            <li>Mosaic was one of the first web browsers introduced that became the signature of today’s Internet.</li>
-                        </ul>
-            <figure>
-                <img style="width:40%" src="images/image8.jpg" alt="Tim Berners-Lee photo by freeasinfreedom"/>
-                <figcaption id="figcaptionTag" style="width:40%">Figure.4 - Tim Berners-Lee (Photo by freeasinfreedom)</figcaption>
-            </figure>
-
-
+                <p>We can see how software testing is significant when we develop code because it helps the developer to
+                ensure there are no costly errors for the system and minimize any future downtime with the system. The primary goal for testing is to
+                test every component of the code, and we can take advantage of procedures such as AAA testing that helps the developer to write
+                proper testing to every part of the code, and ensure there are no issues in the implementation phase. At the end, every code
+                that is pushed and implemented into a production must follow teh coding standards to would prevent future hacks, and data breaches.</p>
+<br>
+<br>
+        <div id="gfg2">Principles of Object-Oriented Programming (OOP)</div>
+            <p>OOP is a computer programming model focus around the data and objects instead of the logic side of the code.
+                The organization of an object-oriented program also makes the method beneficial to collaborative development,
+                where projects are divided into groups. Additional benefits of OOP include code reusability, scalability and efficiency.
+                Also, there are principles of object-oriented programming that defines in more detail the structure of OOP in software
+                development and these are: Encapsulation, Inheritance, Polymorphism, and Abstraction</p>
+        <p id="title3">How The Calculator Program Demonstrates The OOP Principles?</p>
+            <p id="paraHeaders4">Encapsulation</p>
+                <p>Encapsulation takes the data, variables, attributes and methods in the code and keep it all together under a parent element.
+                    This is beneficial because we prevent accidental changes for the fact that an object’s variable can only be changed by an object’s method.
+                    This principal is used in our calculator program with classes because it encapsulates the static methods, properties, constructors, and variables.
+                    Figure 9 shows how the static methods, properties, and variables are compressed under the Calculation class</p>
+                        <figure>
+                            <img style="width:80%" src="images/prin1.jpg" alt="Encapsulation for Calculator Program"/>
+                            <figcaption id="figcaptionTag10" style="width:80%">Figure.9 Encapsulation for Calculator Program</figcaption>
+                        </figure>
+            <p id="paraHeaders5">Inheritance</p>
+                <p>Inheritance is another OOP principal with a main characteristic that a class can obtain all the properties
+                    from another class. The benefit of following this concept is that we can represent a relationship between all
+                    elements in a class. Also, we can reuse the same code, and we can save time by doing this. In our calculator program this is
+                    used with the calculations' folder which contains four different operation files and one calculation file.
+                    The operation files are the child classes and the calculation file is the parent class which is modified by the result of these child classes. </p>
+                        <figure>
+                            <img style="width:80%" src="images/prin2.jpg" alt="Inheritance for Calculator Program"/>
+                            <figcaption id="figcaptionTag11" style="width:80%">Figure.10 Inheritance for Calculator Program</figcaption>
+                        </figure>
+            <p id="paraHeaders6">Polymorphism</p>
+                <p>Polymorphism is an OOP principle on which an object, function or variable can have multiple forms in different instances of the program.
+                    The word polymorph means "poly" for "many" and "morph" for "forms". In Polymorphism, a message is sent to multiple
+                    class objects, and every object responds appropriately according to the properties of the class.
+                    For the calculator program, we see this principle where the four calculations/operations (division, addition, subtraction and multiplication)
+                    have separate implementations for the calculation class. (See figure 11 for all four calculations)  </p>
+                    <figure>
+                        <img style="width:80%" src="images/prin4.jpg" alt="Polymorphism for Calculator Program"/>
+                        <figcaption id="figcaptionTag12" style="width:80%">Figure.11 Polymorphism for Calculator Program</figcaption>
+                    </figure>
+            <p id="paraHeaders7">Abstraction</p>
+                <p>Abstraction is one of the key concepts in OOP. The main tasks for abstraction is to hide implementation details that may be irrelevant to a developer or end-user.
+                    As a developer we only need to know about what methods and parameters are needed to call a specific function.
+                    In the calculator program, we use abstraction through the use of hierarchical abstractions. In figure 12,
+                    abstract class here is the Calculations class that inherits from the Addition, Subtraction, Multiplication and Division classes from the
+                    same calculation modules.</p>
+                        <figure>
+                            <img style="width:80%" src="images/prin3.jpg" alt="Abstraction for Calculator Program"/>
+                            <figcaption id="figcaptionTag13" style="width:80%">Figure.12 Abstraction for Calculator Program</figcaption>
+                        </figure>
     </article>
 </div>
 

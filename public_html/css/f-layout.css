@@ -98,6 +98,13 @@ body {
     text-align: center;
 }
 
+#gfg2 {
+    color:#001f3f;
+    font-size:50px;
+    font-weight:bold;
+    text-align: center;
+}
+
 #geeks {
     text-align: center;
     font-size:35px;
@@ -171,6 +178,63 @@ div.center {
     text-align: center;
     font-weight:bold;
 }
+#figcaptionTag7 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag8 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag9 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag10 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag11 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag12 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag13 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+#figcaptionTag14 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-weight:bold;
+}
+
 
 p {
     line-height: 2;
@@ -233,6 +297,22 @@ p2 {
     font-size:20px;
 }
 #paraHeaders4 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders5 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders6 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders7 {
+    font-weight:bold;
+    font-size:20px;
+}
+#paraHeaders8 {
     font-weight:bold;
     font-size:20px;
 }
