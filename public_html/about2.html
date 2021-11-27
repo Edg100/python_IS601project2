@@ -31,7 +31,63 @@
 <div class="main">
     <article id="primaryContent">
         <div id="gfg">SOLID Object Oriented Design</div>
-        <p></p>
+        <p>SOLID is an acronym for the first five object-oriented design (OOD) principles by Robert C. Martin (also known as Uncle Bob).
+            These principles are key to develop code that can be extended as the project grows, and add some benefits such as
+            avoiding code smells, refactoring code, and adapting software development methodologies such as Agile.
+            SOLID stands for:
+            <ul>
+                <li>S - Single-responsibility Principle</li>
+                <li>O - Open-closed Principle</li>
+                <li>L - Liskov Substitution Principle</li>
+                <li>I - Interface Segregation Principle</li>
+                <li>D - Dependency Inversion Principle</li>
+            </ul>
+            </p>
+        <p>In our calculator program, we can see how all these principles are put in practice. We will follow this in our
+            branch(calc_part5) of the calculator program (see the repo to this code below):
+            <a href="https://github.com/Edg100/calc2/tree/calc_part5">https://github.com/Edg100/calc2/tree/calc_part5</a></p>
+        <p id="paraHeaders">Single-responsibility principal</p>
+            <p>This principal states that a class should have only one task to perform in the code. Below, you can see one example
+                of how simple responsibility is used with the Calculations class, here the only task for this class is to
+                perform all calculation history of the calculator some of these are: clear history, get first calculation, add multiplication calculation among others.
+                Also, we have child classes where they have a unique job which is to add, subtract, multiply, and divide two values. </p>
+            <figure>
+                <img style="width:80%" src="images/solid1.jpg" alt="Calculations Class"/>
+                <figcaption id="figcaptionTag" style="width:70%">Figure.1 - Calculations Class</figcaption>
+            </figure>
+        <p id="paraHeaders2">Open-closed Principle</p>
+            <p>Object, classes, methods or attributes should be open for extensions, but close for modifications.
+                In calc_part5 branch, we can see that the Calculation class the one that controls all calculations, has a factory method
+                this is basically an interface for creating new objects when we need to expand the calculator functionalities.</p>
+            <figure>
+                <img style="width:80%" src="images/solid2.jpg" alt="Calculation Class"/>
+                <figcaption id="figcaptionTag2" style="width:70%">Figure.2 - Calculation Class</figcaption>
+            </figure>
+        <p id="paraHeaders3">Liskov Substitution Principle</p>
+            <p>Liskov Substitution Principle explains that every subclass or derived class should be substitutable for their base or parent class.
+                In other words, this principle helps to make changes in the code without any unexpected behaviours. Also, this is about
+                creating the correct hierarchy so that child classes derive from the parent class with respect to methods and interfaces.
+                We notice this method being applied to the calculator program where we separate every class into each distinct function that at the
+                same time this helps to extend the hierarchy correctly.</p>
+            <figure>
+                <img style="width:80%" src="images/solid3.jpg" alt="Hierarchy of Calculations Classes"/>
+                <figcaption id="figcaptionTag3" style="width:70%">Figure.3 - Hierarchy of Calculations Classes</figcaption>
+            </figure>
+        <p id="paraHeaders4">Interface Segregation Principle</p>
+            <p>Having complex interfaces it is a disadvantage because it is difficult for developers and clients to understand, test and implement them.
+                This is what this principle deals with the idea to implement one single interface and from there we can have multiple interfaces
+                for all common methods. This is a great example for our calculator project where having different classes we can easily understand where the
+                operations are originated or if we need additional functions/interfaces we can just add them under the main interface. </p>
+                <figure>
+                    <img style="width:80%" src="images/solid4.jpg" alt="Interfaces of Calculation Class"/>
+                    <figcaption id="figcaptionTag4" style="width:70%">Figure.4 - Interfaces of Calculation Class</figcaption>
+                </figure>
+
+        <p id="paraHeaders5">Dependency Inversion Principle</p>
+            <p>The calculator program is a clear example for the dependency inversion principle because we have high-level modules
+                that do not depend on the low-level modules. For instance, the calculation module is independent of the other modules such as
+                addition, division, multiplication , and subtraction modules. In that sense, if we add another math calculation, let us say logarithm operation of
+                a number, we can add a module for this function.</p>
         <br>
         <br>
         <div id="gfg2">Glossary of Object-Oriented Programming Concepts</div>
