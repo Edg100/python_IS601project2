@@ -1,26 +1,25 @@
-# **History of The Internet**
+# **Object-Oriented Programming**
 
 ## IS601
-## Project 1
+## Project 2
 #### Created by Edgardo Guillen
 
 ## Website URL:
-[History of the Internet](http://proisie.eastus.azurecontainer.io/)
+[Object Oriented Programming Website](http://proisie.eastus.azurecontainer.io/)
 
 ## Repository Link
 
-https://github.com/Edg100/is601_project1
+https://github.com/Edg100/python_IS601project2
 
-## Website pages (pictures)
-
-
-## W3C validator results for Home page
+## Website page for Home page
 
 ![Home Page](pic1.jpg)
-## W3C validation results for Info page
+
+## Website page for Info page
 
 ![Info Page](pic2.jpg)
-## W3C validation results for Glossary page
+
+## Website page for Glossary page
 
 ![Glossary Page](pic3.jpg)
 
